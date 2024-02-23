@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PK Dosing Volume Calculator</title>
+    <style>
+        .result-box {
+            background-color: lightblue;
+            padding: 10px;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .input-label {
+            font-size: 24px;
+        }
+
+        .calculate-button {
+            font-size: 24px;
+            font-weight: bold;
+            background-color: light blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>PK Dosing Volume Calculator</h1>
+    <label for="strength" class="input-label">Strength (mg/kg):</label>
+    <input type="number" id="strength" style="font-size: 24px;" required><br><br>
+    <label for="body-weight" class="input-label">Body Weight (grams):</label>
+    <input type="number" id="body-weight" style="font-size: 24px;" required><br><br>
+    <label for="solution-concentration" class="input-label">Solution Concentration (mg/mL):</label>
+    <input type="number" id="solution-concentration" style="font-size: 24px;" required><br><br>
+    <button onclick="calculateDosingVolume()" class="calculate-button">Calculate</button><br><br>
+    <div id="result" class="result-box"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
